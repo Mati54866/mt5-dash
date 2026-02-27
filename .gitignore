@@ -1,0 +1,17 @@
+.venv
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/   
+dist/
+downloads/
+eggs/
+.eggs/
+
+
+lib/
+lib64/
