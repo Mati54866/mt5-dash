@@ -142,7 +142,7 @@ def detect_and_parse_csv(uploaded_file) -> Optional[pd.DataFrame]:
                 df = pd.read_csv(io.StringIO(content), sep=sep, engine="python")
                 if len(df.columns) >= 4:
                     break
-            except:
+            except Exception:
                 continue
         else:
             st.error("Could not parse CSV. Check format.")
